@@ -49,3 +49,36 @@ Line 3: REPEAT FORMAT OF LINE 2
 
 ## Exercise Three
 
+1. With the help of linked lists, this program can create polynomials with complex coefficients, it can compute the value of polynomials for a given complex number,
+it can sum and multiply polynomials of different degrees, it can read polynomials from text files. If the exponent of a certain term is higher than the degree of the polynomial, it is going to be ignored and if a line is empty, it will also be ignored. 
+After reading a text file, if the program can’t find any proper terms to generate the polynomial, then it will add a default term with the exponent equal to its maximum degree and the coefficient (1).
+
+2. The polynomial class contains a method called “simplify” which is used to sum all the terms of the polynomial having the same exponent after reading or summing or multiplying polynomials.
+
+3. A structure called “pTerm” is used to store monomials as objects having the fields: exponent(int) and “coeff” ( complex coefficient) and for working with complex numbers, another class called “complex” is used.
+
+4. To sum/multiply the terms of polynomials, this program uses a method from the “pTerm” structure called “sum/mult” which returns a new “pTerm”.
+
+5. The same polynomial object can be changed by reading more than one file. For example, if a polynomial “p1” was created and the program was told to read the monomials from the file “p1.txt”, we can make it read that same file again for the same polynomial instance and the older terms of the polynomial would be summed up with the newly added ones. If we make it read a different file “p2.txt” for the same polynomial instance, it will check whether the newly read degree is different from the old one. If it’s smaller, all the old terms with an exponent higher than the new degree will be removed, then the new terms will be added, and the degree will be changed to the smaller one.
+
+### How to Use
+
+There are two ways to use this program, but first you must prepare the text files in which you will provide information about the polynomials you would like the program to generate and work with. 
+
+- By just running the program, you can directly tell it through the console what operations you want it to perform (summation, multiplication, computing values of polynomials or just displaying one, then specify the path of the text file.
+
+- Alternatively, you can remove the while loop inside main and manually call the following methods for different polynomials: p1.readPolynomial(PATH), p1.display(), p1.sum(Polynomial p2), p1.mult(Polynomial p2) 
+
+For example, if wewanted to generate this polynomial:
+
+![poly]()
+
+```
+Inside the text file: 
+Line 1: 3 //The Degree of the polynomial [int]. (It can be higher than 3 too).
+Line 2: 2, 2, -3 // exponent of monomial [int], real part of coefficient [double], imaginary part [double].
+Line 3: 0, 7, -4.5
+Line 4: 3, 0, -6
+```
+
+
