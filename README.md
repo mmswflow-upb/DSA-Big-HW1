@@ -1,6 +1,6 @@
 # DSA-Big-HW1
 
-This is the first big assignment in the data structures course. In the following, the solutions will be explained.
+This is the first big assignment in the data structures course (in C++). In the following, the solutions will be explained.
 
 ## Exercise One
 
