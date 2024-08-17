@@ -69,9 +69,9 @@ There are two ways to use this program, but first you must prepare the text file
 
 - Alternatively, you can remove the while loop inside main and manually call the following methods for different polynomials: p1.readPolynomial(PATH), p1.display(), p1.sum(Polynomial p2), p1.mult(Polynomial p2) 
 
-For example, if wewanted to generate this polynomial:
+For example, if we wanted to generate this polynomial:
 
-![poly]()
+![poly](image.png)
 
 ```
 Inside the text file: 
